@@ -13,6 +13,7 @@
   --gray: #858585;
   --light-gray: #d2d2d2;
   --light-white: #f1f1f1;
+  --red: #e71616;
 
   /* Fonts */
   --base-font: Raleway, sans-serif;
@@ -84,7 +85,7 @@ nav a {
   width: 50%;
   height: 2px;
   bottom: 0;
-  background: var(--dark-base);
+  background: rgb(231, 22, 22);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.2s ease-out;
@@ -97,7 +98,7 @@ nav a {
 .hero-section {
   width: 100%;
   min-height: 600px;
-  background-image: url(./ressources/Tokyo-GTA.jpg);
+  background-image: url(./ressources/TokyoNight.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -146,5 +147,8 @@ nav a {
 }
 
 .hero-btn:hover {
-  color: #111;
+  color: var(--dark-base);
+  background-image: url("/ressources/japan-flag.png");
+  background-size: cover;
+  background-position: center;
 } 
