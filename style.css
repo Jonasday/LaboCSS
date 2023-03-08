@@ -69,8 +69,10 @@ body {
 
 nav {
   text-align: center;
-  font-size: var(--fs-30);
+  font-size: var(--fs-20);
   margin-bottom: 20px;
+  position: sticky;
+  z-index: 222;
 }
 
 nav a {
@@ -97,8 +99,8 @@ nav a {
 }
 
 .hero-section {
-  width: 100%;
-  min-height: 600px;
+  padding: 145px 10px 10px;
+  min-height: 700px;
   background-image: url(./ressources/TokyoNight.jpg);
   background-size: cover;
   background-position: center;
@@ -111,7 +113,7 @@ nav a {
 
 .main-title {
   color: var(--light-white);
-  font-size: 8rem;
+  font-size: 7rem;
   font-family: var(--accent-font);
   letter-spacing: 5px;
   text-shadow: var(--shadow-sm);
@@ -121,7 +123,7 @@ nav a {
   position: relative;
   padding: 15px 30px;
   margin: 5px 20px;
-  font-size: var(--fs-24);
+  font-size: var(--fs-16);
   border-radius: 5px;
   border: none;
   z-index: 1;
@@ -150,10 +152,27 @@ nav a {
 
 .hero-btn:hover {
   color: var(--dark-base);
-  /* background-image: url("/ressources/japan-flag.png");
-  background-size: cover;
-  background-position: center; */
 } 
+
+@media(max-width: 768px){
+  .website-title {
+    font-size: var(--fs-42);
+  }
+  .main-title {
+    font-size: var(--fs-72);
+  }
+  .heading-2 {
+    font-size: var(--fs-26);
+  }
+  .surtitle {
+    font-size: var(--fs-16);
+  }
+  .hero-btn {
+    font-size: var(--fs-14);
+    padding: 10px 20px;
+    margin: 5px 10px;
+    }
+}
 
 
 /***** Les quartiers *****/
@@ -246,7 +265,9 @@ nav a {
 }
 
 .quartier-link:hover {
-  background-color: var(--red);
+  background-image: url("/LaboCSS/ressources/japan-flag.png");
+  background-position: center;
+  background-size: cover;
 }
 
 @media(max-width: 768px) {
@@ -276,5 +297,48 @@ nav a {
   .quartier-description {
     padding: 0px 25px 25px;
     width: 100%;
+  }
+}
+
+/**** PARALLAX ****/
+
+.parallax {
+  min-height: 275px;
+  background-image: url(ressources/parallax.jfif);
+  background-position: center;
+  background-size: cover;
+
+  /* pour l'effet visuel */
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--light-white);
+}
+
+.japanese-text {
+  font-size: var(--fs-64);
+  line-height: 1.2;
+  text-shadow: var(--shadow-sm);
+}
+
+.parallax-text {
+  font-size: var(--fs-32);
+  text-shadow: var(--shadow-sm);
+  font-family: var(--accent-font);
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .parallax {
+    min-height: 200px;
+  }
+  .japanese-text {
+    font-size: var(--fs-40);
+  }
+  .parallax-text {
+    font-size: var(--fs-18);
   }
 }
