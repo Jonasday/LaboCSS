@@ -14,7 +14,8 @@
   --light-gray: #d2d2d2;
   --light-white: #f1f1f1;
   --red: #e71616;
-  --white: rgb(243, 240, 238);
+  --white: #f3f0ee;
+  --orange: #ff8c00;
 
   /* Fonts */
   --base-font: Raleway, sans-serif;
@@ -112,7 +113,7 @@ nav a {
 .main-heading {
   color: white;
   font-family: var(--accent-font);
-  font-size: var(--fs-90);
+  font-size: 7rem;
   text-shadow: var(--shadow-sm);
   letter-spacing: 2px;
   margin-bottom: 25px;
@@ -553,7 +554,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--red);
+  background-color: rgb(255, 140, 0);
   border: var(--dark-thick-border);
 }
 
