@@ -16,8 +16,6 @@
 
     <header id="accueil">
 
-        <div class="home-banner">
-
           <h1 class="website-title">Tokyo Tour</h1>
 
         <nav>
@@ -27,15 +25,19 @@
             <a href="#contact" id="link">Contact</a>
         </nav>
 
-        </div>
-
         <div class="hero-section" id="accueil">
-            <h1 class="main-title">Découvrez Tokyo</h1>
 
-            <button class="hero-btn hero-btn-1">Quartiers</button>
-            <button class="hero-btn hero-btn-2">Contact</button>
+          <h1 class="main-heading">Découvrez Tokyo</h1>
 
+          <button class="hero-btn hero-btn-1">
+              <span>Quartiers</span>
+          </button>
+          <button class="hero-btn hero-btn-2">
+              <span>Contact</span>
+          </button>
         </div>
+
+  </header>
         
     </header>
 
@@ -84,10 +86,10 @@
           <p class="parallax-text">Partez à l'aventure</p>
       </section>
 
-      <section class="pricing" id="tarifs">
+      <section class="pricing">
   
           <p class="surtitle">Les différents tours</p>
-          <h2 class="heading-2">Choisissez ce qui vous convient</h2>
+          <h2 class="heading-2" id="tarifs">Choisissez ce qui vous convient</h2>
 
       <div class="pricing-cards-container">
       
@@ -99,82 +101,46 @@
             <p class="card-subtitle">Lorem ipsum dolor sit amet.</p>
             <ul>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Visite à pied.</span>
               </li>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Sites sacrées.</span>
               </li>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Cours de cuisine.</span>
               </li>
             </ul>
             <button>Réserver</button>
           </div>
 
-
-          <div class="pricing-card c2">
-          <h3>
-            <span class="plan-name">Incroyable</span>
-            <span class="plan-line"></span>
-            <span class="plan-price">75€</span>
-          </h3>
-            <p class="card-subtitle">Lorem ipsum dolor sit amet.</p>
-            <ul>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Visite à pied.</span>
-              </li>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Sites sacrées.</span>
-              </li>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Cours de cuisine.</span>
-              </li>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Visite nocturne.</span>
-              </li>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Circuit privé.</span>
-              </li>
-              <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
-                <span>Restaurant gastronomique.</span>
-              </li>
-            </ul>
-            <button>Réserver</button>
-          </div>
+          <img class="songoku" src="/ressources/Son-Goku.png" alt="Son-Goku">
 
 
           <div class="pricing-card c3">
             <h3>            
-              <span class="plan-name">Fun</span>
+              <span class="plan-name">Incroyable</span>
               <span class="plan-line"></span>
-              <span class="plan-price">45€</span>
+              <span class="plan-price">50€</span>
             </h3>
             <p class="card-subtitle">Lorem ipsum dolor sit amet.</p>
             <ul>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Visite à pied.</span>
               </li>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Sites sacrées.</span>
               </li>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Cours de cuisine.</span>
               </li>
               <li>
-                <img src="ressources/icons/checked-curly.svg" alt="">
                 <span>Visite nocturne.</span>
+              </li>
+              <li>
+                <span>Circuit privé.</span>
+              </li>
+              <li>
+                <span>Restaurant gastronomique.</span>
               </li>
             </ul>
             <button>Réserver</button>
@@ -184,6 +150,34 @@
 
         <img src="ressources/shadow.png" alt="" class="shadow">
       </section>
-      </main>
+      
+      
+      <section class="contact">
+        <div class="rounded-contact" id="contact">
+            <p class="surtitle">Partageons de bons moments !</p>
+            <h2 class="heading-2">Voilà où tu peux me contacter</h2>
+
+            <ul class="contact-list">
+                 <li>
+                    <span>kyoto_tour@gmail.com</span>
+                    <img src="ressources/email-envelope.svg" alt="email">
+                  </li>
+                  <li>
+                     <a href="#">kyoto_tour_IG</a>
+                    <img src="ressources/instagram.svg" alt="email">
+                  </li>
+                  <li>
+                    <a href="#">kyoto_tour_FB</a>
+                    <img src="ressources/facebook.svg" alt="email">
+                  </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <a href="#">&copy; Tous droits reservés</a>
+</footer>
+
   </body>
 </html>
